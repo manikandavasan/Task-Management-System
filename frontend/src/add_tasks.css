@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: red;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 100px;
+    gap: 30px;
+    border-radius: 5px;
+}
+
+.addtask-form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    border: none;
+    border-radius: 3px;
+}
+.addtask-form> input{
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: #d8d7d7;
+    width: 300px;
+}
+.addtask-form button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: #626868;
+    color: white;
+    font-size: 16px;
+}
+
