@@ -12,7 +12,8 @@ from django.contrib.auth.hashers import check_password
 
 @api_view(['GET'])
 def get_tasks(request, id=None):
-    task = Task.objects.filter(user=id).values()
+    task = Task.objects.filter(user=id).order_by('id').values()
+    print(task)
     return Response(task, status=status.HTTP_201_CREATED)
 
 

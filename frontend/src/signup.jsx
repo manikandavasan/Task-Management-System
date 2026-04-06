@@ -4,7 +4,7 @@ import API from "./api"
 import "./signup.css"
 
 function Signup() {
-
+    const navigate = useNavigate();
     const [userDetail, setUserDetail] = useState({
         username:"",
         firstname:"",
@@ -31,6 +31,7 @@ function Signup() {
                     'Content-Type': 'application/json',
                 }
             })
+            navigate("/api/signin/")
         }
         catch{
 
