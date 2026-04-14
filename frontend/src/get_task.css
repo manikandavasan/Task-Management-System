@@ -9,11 +9,9 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
     padding: 20px;
     padding-top: 100px;
-    /* overflow-x: hidden; */
 }
 .overall{
     background-color: white;
@@ -22,16 +20,14 @@
     flex-direction: column;
     gap: 30px;
 }
-.task-table{
-    border: 2px solid black;
-    border-collapse: collapse;
-}
-.task-table th, .task-table td{
+
+.task-table, th, td{
     border: 2px solid black;
     padding: 8px;
-    /* border: none; */
 }
-
+.task-table{
+    border-collapse: collapse;
+}
 
 .task-table td button{
     height: 50px;
@@ -48,6 +44,18 @@
     border-radius: 3px;
 }
 
+.add-task-btn:hover{
+    background-color: #003c9b;
+    color: white;
+}
+
+.edit-delete-btn{
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    border: none;
+}
+
 @media screen and (max-width:400px){
     .overall{
         padding: 0px;
@@ -58,3 +66,4 @@
         overflow-x: auto;
     }
 }
+

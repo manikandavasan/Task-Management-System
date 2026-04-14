@@ -77,3 +77,10 @@ def get_task(request, id):
     task = get_object_or_404(Task, id=id)
     serializer = TaskSerializer(task)
     return Response(serializer.data, status=200)
+
+@api_view(['POST'])
+def add_premium_user(request, id):
+    user = PremiumUserSerialaizer(data=request.data)
+    if user.is_valid():
+        user.save()
+    return Response("Premium user interest added successfully", status=status.HTTP_201_CREATED)

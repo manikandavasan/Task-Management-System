@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Task
+from .models import *
 from django.contrib.auth.models import User
 
 class TaskSerializer(serializers.ModelSerializer):
@@ -20,4 +20,9 @@ class UserSerializer(serializers.ModelSerializer):
             username=validated_data['username'],
             password=validated_data['password']
         )
-        return user
+        return 
+
+class PremiumUserSerialaizer(serializers.ModelSerializer):
+    class Meta:
+        model = PremiumUser
+        fields = '__all__'

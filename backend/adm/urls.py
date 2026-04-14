@@ -9,5 +9,6 @@ urlpatterns = [
     path('signin/', sign_in, name='signin'),
     path('tasks/delete/<int:id>/', delete_task),
     path('tasks/update/<int:id>/', update_task),
+    path('user/premium/<int:id>/', add_premium_user),
 ]
 

@@ -15,3 +15,14 @@ class Task(models.Model):
     
     class Meta:
         db_table = 'Task'
+
+class PremiumUser(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        db_table = 'PremiumUser'

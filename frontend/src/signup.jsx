@@ -50,8 +50,7 @@ function Signup() {
                 <input type="password" placeholder="Enter password" name="password" onChange={handleChange} />
                 <input type="password" placeholder="confirm password" name="confirm_password" onChange={handleChange} />
                 <button type="submit">Submit</button>
-                {/* <p>already have an account <button onClick={Navigate_signin}>Signin</button></p> */}
-                <p>already have an account <Link to="/api/signin/">Signin</Link></p>
+                <p>already have an account <Link to="/api/signin/"><span>Signin</span></Link></p>
             </form>
         </div>
     )

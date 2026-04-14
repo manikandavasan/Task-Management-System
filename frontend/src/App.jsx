@@ -6,6 +6,7 @@ import AddTask from "./add_task";
 import Signin from "./signin";
 import Signup from "./signup";
 import EditTask from "./edit_task";
+import Premium from "./premium"; 
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="api/signin/" element={<Signin />} />
         <Route path="api/tasks/create/:id" element={<AddTask />} />
         <Route path="api/tasks/update/:id" element={<EditTask />} />
+        <Route path="api/user/premium/:id" element={<Premium />} />
       </Routes>
     </BrowserRouter>
   )
